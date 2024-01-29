@@ -1,0 +1,53 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  .page-title {
+    h2 {
+      span {
+        margin-right: 10px;
+        color: $light-color;
+      }
+    }
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 170px;
+      max-width: 400px;
+      right: 0;
+      top: 15px;
+      height: 1px;
+      background: $text-color;
+    }
+  }
+}
+
+.container.page {
+  padding-top: 50px;
+}
+
+.light-color {
+  color: $light-color;
+}
+
+.dark-color {
+  color: $dark-color;
+}
+
+.text-color {
+  color: $text-color;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 20px;
+    width: auto;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}

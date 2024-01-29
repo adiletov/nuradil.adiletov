@@ -1,0 +1,20 @@
+.skills {
+  height: 600px;
+  border-radius: 16px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.skills td {
+  border: 1px solid $light-color;
+  text-align: center;
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+}
+
+
+
+

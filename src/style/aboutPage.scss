@@ -1,0 +1,21 @@
+.about-page {
+  display: flex;
+
+  .custom:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0000; /* Replace with your desired custom color */
+    mix-blend-mode: color; /* This will blend the background color with the content */
+    opacity: 0.5; /* Adjust the opacity as needed */
+  }
+  img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    filter: grayscale(100%);
+  }
+}
