@@ -20,17 +20,26 @@
 <script>
 import * as THREE from "three";
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+import js from '../assets/js.png';
+import ts from '../assets/ts.png';
+import node from '../assets/node.webp';
+import react from '../assets/react.png';
+import vue from '../assets/vue.png';
+import rn from '../assets/rn.png';
+import dart from '../assets/dart.png';
+import flutter from '../assets/flutter.png';
+import angular from '../assets/angular.png';
 
 const skillsArr = [
-  {id: 'js', imgSrc: 'js.png'},
-  {id: 'ts', imgSrc: 'ts.png'},
-  {id: 'node', imgSrc: 'node.webp'},
-  {id: 'react', imgSrc: 'react.png'},
-  {id: 'vue', imgSrc: 'vue.png'},
-  {id: 'rn', imgSrc: 'rn.png'},
-  {id: 'dart', imgSrc: 'dart.png'},
-  {id: 'flutter', imgSrc: 'flutter.png'},
-  {id: 'angular', imgSrc: 'angular.png'},
+  {id: 'js', imgSrc: js},
+  {id: 'ts', imgSrc: ts},
+  {id: 'node', imgSrc: node},
+  {id: 'react', imgSrc: react},
+  {id: 'vue', imgSrc: vue},
+  {id: 'rn', imgSrc: rn},
+  {id: 'dart', imgSrc: dart},
+  {id: 'flutter', imgSrc: flutter},
+  {id: 'angular', imgSrc: angular},
 ]
 export default {
   name: "Work",
@@ -64,7 +73,7 @@ export default {
       skillsArr.forEach(({id, imgSrc}) => {
         const container = document.getElementById(id);
         const scene = new THREE.Scene();
-        const texture = textureLoader.load(`../../src/assets/${imgSrc}`)
+        const texture = textureLoader.load(imgSrc)
         const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer();
         renderer.setSize(container.clientWidth, container.clientHeight);
