@@ -64,7 +64,7 @@ export default {
       skillsArr.forEach(({id, imgSrc}) => {
         const container = document.getElementById(id);
         const scene = new THREE.Scene();
-        const texture = textureLoader.load(`./dist/src/assets/${imgSrc}`)
+        const texture = textureLoader.load(`./src/assets/${imgSrc}`)
         const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer();
         renderer.setSize(container.clientWidth, container.clientHeight);
